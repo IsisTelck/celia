@@ -1,0 +1,19 @@
+try:
+    valor = float(input("Digite um número com ponto flutuante: "))
+    if valor > 100:
+        print("Valor maior que 100 não é permitido")
+    else:
+        resultado = 10 / valor
+        print("O resultado é:", resultado)
+except ValueError:
+    print("Você digitou um valor inválido.Digite um número com ponto flutuante .")
+except ZeroDivisionError:
+    print("Não é possível dividir por zero.")
+except FloattingPointError:
+    print("Valor decimal inválido,digite novamente.")
+except:
+    print("Erro encontrado.")
+else:
+    print("Nenhum erro encontrado.")
+finally:
+    print("Fim do programa.")
