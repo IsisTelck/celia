@@ -1,0 +1,8 @@
+try:
+    nome = input("Digite seu nome: ")
+    idade = int(input("Digite sua idade: "))
+    print(f"Olá {nome},você tem {idade} anos")
+except ValueError:
+    print("Você digitou um valor inválido.Digite um número inteiro.")
+finally:
+    print("Fim do programa.")
