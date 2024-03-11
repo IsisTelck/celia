@@ -1,0 +1,33 @@
+'''
+
+prog. random (isis)
+
+'''
+import random
+numero_secreto=random.randint(1,10)
+tentativas=0
+max_tentativas=5
+
+print("Bem-vindo ao jogo de adivinhação!")
+print("Tente adivinhar o número que estou pensando, entre 1 e 10.")
+
+while tentativas < max_tentativas:
+    palpite=int(input("Digite o seu palpite:"))
+    
+    tentativas+=1
+    
+    if palpite==numero_secreto:
+        print(f"Parabéns!Você acertou o número em {tentativas} tentativas.")
+        break
+    elif palpite<numero_secreto:
+        print("Quase lá! tente um número maior")
+    else:
+        print("Quase lá! tente um número menor")
+        
+    if tentativas < max_tentativas:
+        print(f"Você tem {max_tentativas - tentativas} tentativas restantes.")
+    else:
+        print("infelizmente, você não acertou.O número era",numero_secreto)
+        
+    print("Fim do jogo!")
+        
