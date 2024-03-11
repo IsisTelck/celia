@@ -1,0 +1,21 @@
+'''
+
+ oi céliaa
+
+'''
+try:
+    valor=float(input("Digite o valor do produto "))
+    if valor>100.00:
+        print("Valor não permitido")
+        print("Bom dia")
+except ValueError:
+    print("digitar somente números sem símbolos")
+except FloatingPointError:
+    print("Digitar número com ponto e não vírgula")
+except Exception as celia:
+    mensagem=str(celia)
+    print("ocorreu um erro",mensagem)
+else:
+    print("nenhum erro")
+finally:
+    print("realizado com sucesso")

@@ -1,0 +1,10 @@
+'''
+
+ oi céliaa
+
+'''
+b=False
+if not b:
+    print("você esta correta")
+else:
+    print("sim,você está errado")
