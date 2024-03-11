@@ -1,0 +1,12 @@
+'''
+
+prog. switch (isis)
+
+'''
+pergunta=input("Qual o seu nome? ")
+switch_case={
+    "mais":"Olá, {0}".format(pergunta),
+    "fim":"Tchau, {0}".format(pergunta)
+}
+resp=input("Digite mais ou fim: ")
+print(switch_case[resp])
